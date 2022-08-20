@@ -1,6 +1,7 @@
 public class App {
     public static void main(String[] args) {
 
+        // Array of Strings
         String[] myfavefastfood = { "Jollibee", "Mcdonalds", "KFC", "MangInasal", "Chowking" };
 
         System.out.println("This is my most favorite fast food restaurant:");
@@ -17,5 +18,20 @@ public class App {
             System.out.println(myfavefastfood[i]);
         }
 
+        // Question: What if you want to add another restaurant (ex. Burgerking) into
+        // the array?
+        // Answer: You cannot. You will need to create another array in order to add
+        // another element
+
+        String[] mynewfavefastfood = { "Jollibee", "Mcdonalds", "KFC", "MangInasal", "Chowking", "BurgerKing" };
+
+        // Array of Integers
+        int[] myfavoriteNumbers = { 11, 22, 33, 44, 55 };
+
+        // Array of Char
+        char[] myfavoriteLetters = { 'A', 'B', 'C', 'D', 'E' };
+
+        // Array of Symbols
+        char[] myfavoriteSy = { '4', '!', 'C', '$', 'E' };
     }
 }
