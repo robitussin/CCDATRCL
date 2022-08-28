@@ -4,33 +4,40 @@ class Main {
     public static void main(String[] args) {
 
         // create linkedlist
-        LinkedList<String> animals = new LinkedList<>();
+        LinkedList<String> Playlist = new LinkedList<>();
+
+        // Real world examples: Train, music/video playlists
 
         // Add elements to LinkedList
-        animals.add("Dog");
-        animals.add("Cat");
-        animals.add("Cow");
-        System.out.println("LinkedList: " + animals);
+        Playlist.add("Pare ko");
+        Playlist.add("Overdrive");
+        Playlist.add("Alapaap");
+        System.out.println("Current playlist: " + Playlist);
 
         // add() method with the index parameter
-        animals.add(1, "Horse");
-        System.out.println("Updated LinkedList: " + animals);
+        Playlist.add(1, "With a Smile");
+        System.out.println("Updated playlist: " + Playlist);
 
         // get the element from the linked list
-        String str = animals.get(1);
+        String str = Playlist.get(1);
         System.out.print("Element at index 1: " + str);
 
         // change elements at index 3
-        animals.set(2, "Chicken");
-        System.out.println("Updated LinkedList: " + animals);
+        Playlist.set(2, "Magasin");
+        System.out.println("Updated playlist: " + Playlist);
 
         // remove elements from index 1
-        animals.remove(1);
+        Playlist.remove(1);
 
-        System.out.println("Updated LinkedList: " + animals);
+        System.out.println("Updated playlist: " + Playlist);
 
-        animals.addFirst("Monkey");
+        Playlist.addFirst("Monkey");
 
-        System.out.println("Updated LinkedList: " + animals);
+        System.out.println("Updated playlist: " + Playlist);
+
+        // Iterate through playlist using for each
+        for (String song : Playlist) {
+            System.out.println(song);
+        }
     }
 }
