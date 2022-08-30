@@ -1,29 +1,32 @@
 public class App {
     public static void main(String[] args) {
 
+        // Singly Linked list
+        // Create three nodes that will contain the song title
         Playlist song1 = new Playlist("Pare ko");
         Playlist song2 = new Playlist("Overdrive");
         Playlist song3 = new Playlist("Alapaap");
 
+        // Create a link between each node
         song1.next = song2;
         song2.next = song3;
 
-        // Count total nodes
+        // Count total nodes in the linked list
         System.out.println("Total Songs in playlist are: " + countNodes(song1));
 
-        // Traverse element in linked list
+        // Go through all nodes in the linked list
         traverse(song1);
 
-        // Insert element after an existing element
+        // Insert a new node after an existing node
         insertAfter(song3, "With a Smile");
 
-        // Insert element at the end
+        // Insert a new node at the end of the linked list
         insertAtEnd(song1, "Magasin");
 
-        // Delete element in linked list
+        // Deletes a node in the linked list
         delete(song1, 4);
 
-        // Traverse linked list
+        // Go through all nodes in the linked list
         traverse(song1);
     }
 
