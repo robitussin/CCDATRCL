@@ -4,8 +4,8 @@ public class Playlist {
     Playlist next;
     Playlist previous;
 
-    Playlist(String title) {
-        this.title = title;
+    Playlist(String songTitle) {
+        title = songTitle;
     }
 
 }

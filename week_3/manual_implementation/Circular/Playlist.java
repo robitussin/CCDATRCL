@@ -3,8 +3,8 @@ public class Playlist {
     String title;
     Playlist next;
 
-    Playlist(String title) {
-        this.title = title;
+    Playlist(String songTitle) {
+        title = songTitle;
     }
 
 }
