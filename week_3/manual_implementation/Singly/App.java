@@ -1,11 +1,13 @@
 public class App {
     public static void main(String[] args) {
 
+        // Singly Linked list
+        // Create three nodes that will contain the song title
         Playlist song1 = new Playlist("Pare ko");
         Playlist song2 = new Playlist("Overdrive");
         Playlist song3 = new Playlist("Alapaap");
 
-        // Singly Linked list
+        // Create a link between each node
         song1.next = song2;
         song2.next = song3;
 
