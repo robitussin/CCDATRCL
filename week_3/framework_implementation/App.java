@@ -3,46 +3,32 @@ import java.util.LinkedList;
 class Main {
     public static void main(String[] args) {
 
-        // Creates a new Linkedlist object
+        // Creates a new Linkedlist Object
         LinkedList<String> Playlist = new LinkedList<>();
 
-        // Real world examples: Train, music/video playlists
-
-        // Add new nodes to LinkedList
+        // Adds new songs to Playlist
         Playlist.add("Pare ko");
         Playlist.add("Overdrive");
         Playlist.add("Alapaap");
+        Playlist.add("Huling El Bimbo");
+        Playlist.add("Huwag kang Matakot");
 
-        // Display all nodes in the LinkedList
-        System.out.println("Current playlist: " + Playlist);
+        // Adds a new song at the front of the Playlist
+        Playlist.addFirst("With a Smile");
 
-        // Adds a new node at a certain position in the LinkedList
-        Playlist.add(1, "With a Smile");
+        // Adds a new song at the end of the Playlist
+        Playlist.addLast("Fruitcake");
 
-        // Display all nodes in the LinkedList
+        // Display node at the front in the LinkedList
+        System.out.println(Playlist.get(0));
+
+        // Replace the last song using the set() method
+        Playlist.set(6, "Magasin");
+
+        // Remove the first song using the remove() method
+        Playlist.remove(0);
+
+        // Display all songs in Playlist
         System.out.println("Updated playlist: " + Playlist);
-
-        // Retrieves the node at a certain position from the LinkedList
-        String str = Playlist.get(1);
-
-        // Display node at position 1 in the LinkedList
-        System.out.print("Element at index 1: " + str);
-
-        // Change node data at index 3 in the LinkedList
-        Playlist.set(2, "Magasin");
-
-        // Display node at position 1 in the LinkedList
-        System.out.println("Updated playlist: " + Playlist);
-
-        // Remove node at index 1
-        Playlist.remove(1);
-
-        // Display all nodes in the LinkedList
-        System.out.println("Updated playlist: " + Playlist);
-
-        // Iterate through LinkedList
-        for (String song : Playlist) {
-            System.out.println(song);
-        }
     }
 }
