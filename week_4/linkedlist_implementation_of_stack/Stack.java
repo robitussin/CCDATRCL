@@ -73,13 +73,14 @@ public class Stack {
         return this.nodeCount;
     }
 
+    // Displays all elements in the stack
     public void printStack() {
 
         Node current = Stack.top;
 
         int count = Stack.nodeCount;
         while (count > 0) {
-            System.out.println(current.data + " ");
+            System.out.println(current.data);
             current = current.next;
             count--;
         }

@@ -61,6 +61,7 @@ public class Stack {
         return arr[top];
     }
 
+    // Displays all elements in the stack
     public void printStack() {
         for (int i = top; i >= 0; i--) {
             System.out.println(arr[i]);
