@@ -3,16 +3,16 @@ public class App {
 
         // Singly Linked list
         // Create three nodes that will contain the song title
-        Playlist song1 = new Playlist("Pare ko");
-        Playlist song2 = new Playlist("Overdrive");
-        Playlist song3 = new Playlist("Alapaap");
+        Song song1 = new Song("Pare ko");
+        Song song2 = new Song("Overdrive");
+        Song song3 = new Song("Alapaap");
 
         // Create a link between each node
         song1.next = song2;
         song2.next = song3;
 
         // Count total nodes in the linked list
-        System.out.println("Total Songs in playlist are: " + countNodes(song1));
+        System.out.println("Total Songs in Song are: " + countNodes(song1));
 
         // Go through all nodes in the linked list
         traverse(song1);
@@ -30,9 +30,9 @@ public class App {
         traverse(song1);
     }
 
-    static int countNodes(Playlist song) {
+    static int countNodes(Song song) {
         int count = 1;
-        Playlist current = song;
+        Song current = song;
 
         while (current.next != null) {
             current = current.next;
@@ -42,8 +42,8 @@ public class App {
         return count;
     }
 
-    static void traverse(Playlist song) {
-        Playlist current = song;
+    static void traverse(Song song) {
+        Song current = song;
 
         while (current != null) {
             System.out.println(current.title + " ");
@@ -51,34 +51,34 @@ public class App {
         }
     }
 
-    static void insertBeginning(Playlist song, String title) {
-        Playlist newSong = new Playlist(title);
+    static void insertBeginning(Song song, String title) {
+        Song newSong = new Song(title);
         newSong = song;
         song = newSong;
     }
 
-    static void insertAfter(Playlist prevSong, String title) {
+    static void insertAfter(Song prevSong, String title) {
         if (prevSong == null) {
             System.out.println("The given previous node cannot be null");
             return;
         }
 
-        Playlist newSong = new Playlist(title);
+        Song newSong = new Song(title);
         newSong.next = prevSong.next;
         prevSong.next = newSong;
     }
 
-    static void insertAtEnd(Playlist song, String title) {
-        Playlist newNode = new Playlist(title);
+    static void insertAtEnd(Song song, String title) {
+        Song newNode = new Song(title);
 
         if (song == null) {
-            song = new Playlist(title);
+            song = new Song(title);
             return;
         }
 
         newNode.next = null;
 
-        Playlist last = song;
+        Song last = song;
         while (last.next != null) {
             last = last.next;
         }
@@ -87,11 +87,11 @@ public class App {
         return;
     }
 
-    static void delete(Playlist song, int position) {
+    static void delete(Song song, int position) {
         if (song == null)
             return;
 
-        Playlist temp = song;
+        Song temp = song;
 
         if (position == 0) {
             song = temp.next;
@@ -106,7 +106,7 @@ public class App {
             return;
 
         // Remove the node
-        Playlist next = temp.next.next;
+        Song next = temp.next.next;
 
         temp.next = next;
     }
