@@ -3,9 +3,9 @@ public class App {
 
         // Singly Linked list
         // Create three nodes that will contain the song title
-        Playlist song1 = new Playlist("Pare ko");
-        Playlist song2 = new Playlist("Overdrive");
-        Playlist song3 = new Playlist("Alapaap");
+        Song song1 = new Song("Pare ko");
+        Song song2 = new Song("Overdrive");
+        Song song3 = new Song("Alapaap");
 
         // Create a link between each node
         song1.next = song2;
