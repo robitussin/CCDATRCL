@@ -1,9 +1,9 @@
-public class Playlist {
+public class Song {
     // attributes/properties
     String title;
-    Playlist next;
+    Song next;
 
-    Playlist(String songTitle) {
+    Song(String songTitle) {
         title = songTitle;
     }
 
