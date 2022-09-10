@@ -7,25 +7,24 @@ public class App {
         Queue<String> HotelReservation = new LinkedList<>();
 
         // Adds elements to the queue
-        HotelReservation.add("Elizer");
-        HotelReservation.add("Lawrence");
         HotelReservation.add("Neil");
+        HotelReservation.add("Lawrence");
         HotelReservation.add("Mariel");
         HotelReservation.add("Jane");
 
         // Display all elements of the queue.
-        System.out.println("Elements of queue " + HotelReservation);
+        System.out.println(HotelReservation);
 
         // Removes the element at the front of the queue
         HotelReservation.remove();
-
-        // Display all elements of the queue.
-        System.out.println(HotelReservation);
 
         // Returns the number of elements in the queue.
         System.out.println(HotelReservation.size());
 
         // Shows the element at the front of the queue
         System.out.println(HotelReservation.peek());
+
+        // Display all elements of the queue.
+        System.out.println(HotelReservation);
     }
 }

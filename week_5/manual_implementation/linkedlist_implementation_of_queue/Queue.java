@@ -76,11 +76,20 @@ class Queue {
 
     // Returns the element at the front of the queue.
     public String peek() {
+        if (nodeCount == 0) {
+            System.out.println("There is no front element because the queue is empty!");
+            return "";
+        }
         return front.data;
     }
 
     // Displays all elements in the queue
     public void printQueue() {
+
+        if (nodeCount == 0) {
+            System.out.println("The queue is empty!");
+            return;
+        }
 
         Node current = Queue.front;
 
@@ -99,7 +108,6 @@ class Queue {
             count--;
         }
 
-        System.out.print("]");
-        System.out.println("");
+        System.out.println("]");
     }
 }

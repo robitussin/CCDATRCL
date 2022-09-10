@@ -1,13 +1,13 @@
 public class App {
     public static void main(String[] args) {
-        Queue HotelReservation = new Queue();
+        Queue HotelReservation = new Queue(10);
 
-        // Adds elements to the queue
+        // // Adds elements to the queue
         HotelReservation.add("Neil");
         HotelReservation.add("Lawrence");
         HotelReservation.add("Mariel");
         HotelReservation.add("Jane");
-
+        System.out.println(HotelReservation.size());
         // Display all elements of the queue.
         HotelReservation.printQueue();
 
