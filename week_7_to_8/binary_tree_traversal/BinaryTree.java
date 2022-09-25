@@ -46,8 +46,6 @@ public class BinaryTree {
             traverseInOrder(node.left);
             System.out.print(" " + node.data);
             traverseInOrder(node.right);
-        } else {
-            System.out.println("node is null");
         }
     }
 
