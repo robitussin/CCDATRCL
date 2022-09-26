@@ -34,22 +34,4 @@ public class BinaryTree {
             traverseInOrder(node.right);
         }
     }
-
-    // Traverse Postorder method
-    static void traversePostOrder(Node node) {
-        if (node != null) {
-            traversePostOrder(node.left);
-            traversePostOrder(node.right);
-            System.out.print(" " + node.data);
-        }
-    }
-
-    // Traverse Preorder method
-    static void traversePreOrder(Node node) {
-        if (node != null) {
-            System.out.print(" " + node.data);
-            traversePreOrder(node.left);
-            traversePreOrder(node.right);
-        }
-    }
 }
