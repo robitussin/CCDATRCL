@@ -8,54 +8,55 @@ class BinarySearchTree {
     root = null;
   }
 
-  void insert(int key) {
-    root = insertKey(root, key);
+  void insert(int number) {
+    root = insertNode(root, number);
   }
 
   // Insert key in the tree
-  Node insertKey(Node root, int key) {
+  Node insertNode(Node root, int number) {
     // Return a new node if the tree is empty
     if (root == null) {
-      root = new Node(key);
+      root = new Node(number);
       return root;
     }
 
     // Traverse to the right place and insert the node
-    if (key < root.key)
-      root.left = insertKey(root.left, key);
-    else if (key > root.key)
-      root.right = insertKey(root.right, key);
+    if (number < root.number)
+      root.left = insertNode(root.left, number);
+    else if (number > root.number)
+      root.right = insertNode(root.right, number);
 
     return root;
   }
 
-  void inorder() {
-    inorderRec(root);
+  void traverseInorder() {
+    traverseInorderFromRoot(root);
+    System.out.println("");
   }
 
   // Inorder Traversal
-  void inorderRec(Node root) {
+  void traverseInorderFromRoot(Node root) {
     if (root != null) {
-      inorderRec(root.left);
-      System.out.print(root.key + " -> ");
-      inorderRec(root.right);
+      traverseInorderFromRoot(root.left);
+      System.out.print(root.number + " -> ");
+      traverseInorderFromRoot(root.right);
     }
   }
 
-  void deleteKey(int key) {
-    root = deleteRec(root, key);
+  void delete(int number) {
+    root = deleteNode(root, number);
   }
 
-  Node deleteRec(Node root, int key) {
+  Node deleteNode(Node root, int number) {
     // Return if the tree is empty
     if (root == null)
       return root;
 
     // Find the node to be deleted
-    if (key < root.key)
-      root.left = deleteRec(root.left, key);
-    else if (key > root.key)
-      root.right = deleteRec(root.right, key);
+    if (number < root.number)
+      root.left = deleteNode(root.left, number);
+    else if (number > root.number)
+      root.right = deleteNode(root.right, number);
     else {
       // If the node is with only one child or no child
       if (root.left == null)
@@ -65,10 +66,10 @@ class BinarySearchTree {
 
       // If the node has two children
       // Place the inorder successor in position of the node to be deleted
-      root.key = minValue(root.right);
+      root.number = minValue(root.right);
 
       // Delete the inorder successor
-      root.right = deleteRec(root.right, root.key);
+      root.right = deleteNode(root.right, root.number);
     }
 
     return root;
@@ -76,11 +77,44 @@ class BinarySearchTree {
 
   // Find the inorder successor
   int minValue(Node root) {
-    int minv = root.key;
+    int minv = root.number;
     while (root.left != null) {
-      minv = root.left.key;
+      minv = root.left.number;
       root = root.left;
     }
     return minv;
+  }
+
+  void search(int number) {
+
+    if (searchNode(root, number) != null) {
+      // If the searchNode method does not return null
+      System.out.println("Node exists");
+    } else {
+      // If the searchNode method returns null
+      System.out.println("Node does not exist");
+    }
+  }
+
+  Node searchNode(Node root, int number) {
+    // If root is null or the number to be searched is equal to the number of the
+    // root, return the root
+    if (root == null || root.number == number) {
+      return root;
+    }
+
+    // If the number to be searched is less than the number of the root, start the
+    // search at the left child of the root.
+    if (number < root.number) {
+      return searchNode(root.left, number);
+    }
+
+    // If the number to be searched is less than the number of the root, start the
+    // search at the right child of the root.
+    if (number > root.number) {
+      return searchNode(root.right, number);
+    }
+
+    return root;
   }
 }

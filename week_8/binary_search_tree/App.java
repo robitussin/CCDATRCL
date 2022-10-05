@@ -3,6 +3,7 @@ public class App {
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();
 
+        // Create/Insert nodes
         tree.insert(8);
         tree.insert(3);
         tree.insert(1);
@@ -12,12 +13,19 @@ public class App {
         tree.insert(9);
         tree.insert(12);
 
-        System.out.print("Inorder traversal: ");
-        tree.inorder();
+        // Show all nodes using inorder traversal.
+        tree.traverseInorder();
 
-        System.out.println("\n\nAfter deleting 10");
-        tree.deleteKey(10);
-        System.out.print("Inorder traversal: ");
-        tree.inorder();
+        // Search if node exists in the binary search tree.
+        tree.search(10);
+
+        // Remove node 10
+        tree.delete(10);
+
+        // Show all nodes using inorder traversal.
+        tree.traverseInorder();
+
+        // Search if node exists in the binary search tree.
+        tree.search(10);
     }
 }
