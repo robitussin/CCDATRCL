@@ -33,10 +33,10 @@ public class App {
         System.out.println("The Min Heap is ");
         heapObj.displayHeap();
 
-        // // removing the root node from the heap
-        // System.out.println("After removing the minimum element(Root Node) " +
-        // heapObj.removeRoot() + ", Min heap is:");
-        // heapObj.displayHeap();
+        // removing the root node from the heap
+        System.out.println("After removing the minimum element(Root Node) " +
+                heapObj.removeRoot() + ", Min heap is:");
+        heapObj.displayHeap();
 
     }
 }

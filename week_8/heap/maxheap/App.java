@@ -14,7 +14,7 @@ class MaxHeapJavaImplementation {
         System.out.println("Enter the size of Max Heap");
         heapSize = sc.nextInt();
 
-        MaxHeap heapObj = new MaxHeap(heapSize + 1);
+        MaxHeap heapObj = new MaxHeap(heapSize * 2);
 
         for (int i = 1; i <= heapSize; i++) {
             System.out.print("Enter " + i + " element: ");
@@ -32,10 +32,10 @@ class MaxHeapJavaImplementation {
         System.out.println("The Max Heap is ");
         heapObj.displayHeap();
 
-        // // removing the root node from the heap
-        // System.out.println("After removing the maximum element(Root Node) " +
-        // heapObj.removeRoot() + ", Max heap is:");
-        // heapObj.displayHeap();
+        // removing the root node from the heap
+        System.out.println("After removing the maximum element(Root Node) " +
+                heapObj.removeRoot() + ", Max heap is:");
+        heapObj.displayHeap();
 
     }
 }

@@ -100,6 +100,10 @@ public class MinHeap {
                     heapData[2 * k + 1]);
             System.out.println();
         }
+
+        for (int i = 0; i < heapData.length; i++) {
+            System.out.print(heapData[i] + " ");
+        }
     }
 
     // create designMinHeap() method to construct min heap
@@ -112,8 +116,9 @@ public class MinHeap {
     // create removeRoot() method for removing minimum element from the heap
     public int removeRoot() {
         int popElement = heapData[FRONT];
-        heapData[FRONT] = heapData[sizeOfHeap--];
+        heapData[FRONT] = heapData[sizeOfHeap];
         minHeapify(FRONT);
+        this.sizeOfHeap--;
         return popElement;
     }
 }

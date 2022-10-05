@@ -4,7 +4,7 @@ public class MaxHeap {
     private int sizeOfHeap;
     private int heapMaxSize;
 
-    private static final int FRONT = 1;
+    private static final int FRONT = 0;
 
     // use constructor to initialize heapData array
     public MaxHeap(int heapMaxSize) {
@@ -92,6 +92,10 @@ public class MaxHeap {
                     heapData[2 * k + 2]);
             System.out.println();
         }
+
+        for (int i = 0; i < heapData.length; i++) {
+            System.out.print(heapData[i] + " ");
+        }
     }
 
     // create designMaxHeap() method to construct min heap
@@ -103,8 +107,9 @@ public class MaxHeap {
 
     // create removeRoot() method for removing maximum element from the heap
     public int removeRoot() {
+
         int popElement = heapData[FRONT];
-        heapData[FRONT] = heapData[sizeOfHeap--];
+        heapData[FRONT] = heapData[sizeOfHeap];
         maxHeapify(FRONT);
         return popElement;
     }
