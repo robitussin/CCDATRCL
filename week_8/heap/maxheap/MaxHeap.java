@@ -92,10 +92,6 @@ public class MaxHeap {
                     heapData[2 * k + 2]);
             System.out.println();
         }
-
-        for (int i = 0; i < heapData.length; i++) {
-            System.out.print(heapData[i] + " ");
-        }
     }
 
     // create designMaxHeap() method to construct min heap

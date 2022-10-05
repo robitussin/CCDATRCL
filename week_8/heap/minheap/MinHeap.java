@@ -100,10 +100,6 @@ public class MinHeap {
                     heapData[2 * k + 1]);
             System.out.println();
         }
-
-        for (int i = 0; i < heapData.length; i++) {
-            System.out.print(heapData[i] + " ");
-        }
     }
 
     // create designMinHeap() method to construct min heap

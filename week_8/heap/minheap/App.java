@@ -23,9 +23,6 @@ public class App {
             heapObj.insertNode(data);
         }
 
-        // close scanner class obj
-        sc.close();
-
         // construct a min heap from given data
         heapObj.designMinHeap();
 
@@ -37,6 +34,9 @@ public class App {
         System.out.println("After removing the minimum element(Root Node) " +
                 heapObj.removeRoot() + ", Min heap is:");
         heapObj.displayHeap();
+
+        // close scanner class obj
+        sc.close();
 
     }
 }
