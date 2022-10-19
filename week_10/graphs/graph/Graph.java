@@ -36,19 +36,19 @@ public class Graph {
         // create graph
 
         // Edge 1
-        myGraph.edge[0].src = "Winnah Jane"; // edge mark---jay
+        myGraph.edge[0].src = "Winnah Jane";
         myGraph.edge[0].dest = "Nica";
 
         // Edge 2
-        myGraph.edge[1].src = "Winnah Jane"; // edge mark---michelle
+        myGraph.edge[1].src = "Winnah Jane";
         myGraph.edge[1].dest = "Jonnah";
 
         // Edge 3
-        myGraph.edge[2].src = "Winnah Jane"; // edge michelle---jay
+        myGraph.edge[2].src = "Winnah Jane";
         myGraph.edge[2].dest = "Ronn";
 
         // Edge 4
-        myGraph.edge[3].src = "Nica"; // edge jay---anne
+        myGraph.edge[3].src = "Nica";
         myGraph.edge[3].dest = "Jonnah";
 
         // print graph
