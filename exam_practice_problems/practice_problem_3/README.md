@@ -1,4 +1,4 @@
-Please try to answer the problems without looking at the answers 💡 <img src="https://cultofthepartyparrot.com/parrots/hd/laptop_parrot.gif" width="30" height="30"/>
+Please try to solve each problems without looking at the answers 💡 <img src="https://cultofthepartyparrot.com/parrots/hd/laptop_parrot.gif" width="30" height="30"/>
 
 Only look at the answer if you cannot solve it 🔎
 
