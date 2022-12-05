@@ -10,8 +10,7 @@ Course Outline: https://believed-bongo-319.notion.site/CCDATRCL-77edd23bcfa54951
 | week_2   | Classes |
 | week_3   | Linked List  |
 | week_4   | Stack  |
-| week_5   | Queue  |
-| week_6   | Queue  |
+| week_5-6  | Queue  |
 | week_7   | Tree  |
 | week_8   | Tree  |
 | week_9   | Hash Table  |
