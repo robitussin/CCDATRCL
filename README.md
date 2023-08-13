@@ -6,12 +6,15 @@ Course Outline: https://believed-bongo-319.notion.site/CCDATRCL-77edd23bcfa54951
 
 | Folder Name | Topic |
 | :---         |     :---:      |       
-| week_1   | Arrays and Abstract Data Types |
-| week_2   | Classes |
-| week_3   | Linked List  |
-| week_4   | Stack  |
-| week_5-6  | Queue  |
-| week_7   | Tree  |
-| week_8   | Tree  |
-| week_9   | Hash Table  |
-| week_10-12   | Graph  |
+| week_1   | Big O Notation and Search Algorithms in Arrays |
+| week_2   | Stack |
+| week_3   | Queue |
+| week_4   | Linked List |
+| week_5  | Sorting Algorithms in Arrays |
+| week_6   | Hash Table  |
+| week_7-8   | Tree  |
+| week_9   | Graph |
+| week_10   | Spanning Tree |
+| week_11   | Prims and Kruskals Algorihtm |
+| week_12   | Djikstra’s Algorithm  |
+
