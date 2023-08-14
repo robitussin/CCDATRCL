@@ -6,7 +6,7 @@ Course Outline: https://believed-bongo-319.notion.site/CCDATRCL-d9da6de4975a412b
 
 | Folder Name | Topic |
 | :---         |     :---:      |       
-| week_1   | Big O Notation and Search Algorithms in Arrays |
+| week_1   | Introduction to Data Structures and Algorithms, Big O Notation and Search Algorithms in Arrays |
 | week_2   | Stack |
 | week_3   | Queue |
 | week_4   | Linked List |
