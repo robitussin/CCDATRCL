@@ -2,7 +2,7 @@
 
 This repository contains all of the java code implementations for each topic in the course outline for data structures and algorithms
 
-Course Outline: https://believed-bongo-319.notion.site/CCDATRCL-77edd23bcfa54951a11391500136aac9
+Course Outline: https://believed-bongo-319.notion.site/CCDATRCL-d9da6de4975a412bb93cc46b4c958941?pvs=4
 
 | Folder Name | Topic |
 | :---         |     :---:      |       
