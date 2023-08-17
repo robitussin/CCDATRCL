@@ -7,9 +7,9 @@ Course Outline: https://believed-bongo-319.notion.site/CCDATRCL-d9da6de4975a412b
 | Folder Name | Topic |
 | :---         |     :---:      |       
 | week_1   | Introduction to Data Structures and Algorithms, Big O Notation and Search Algorithms in Arrays |
-| week_2   | Stack |
-| week_3   | Queue |
-| week_4   | Linked List |
+| week_2   | Linked Lists|
+| week_3   | Stack |
+| week_4   | Queue |
 | week_5  | Sorting Algorithms in Arrays |
 | week_6   | Hash Table  |
 | week_7-8   | Tree  |
